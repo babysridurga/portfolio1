@@ -8,14 +8,6 @@ export const personalData = {
     'AI/ML Enthusiast',
     'Generative AI Developer in Progress',
   ],
-  animatedBio: {
-    visible: "Aspiring Software Engineer",
-    hidden: {
-      top: "Aspiring Software",
-      center: "AI/ML Enthusiast",
-      bottom: "Engineer",
-    }
-  },
   resumeUrl: '/resume.pdf',
 };
 
