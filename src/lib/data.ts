@@ -1,4 +1,4 @@
-import { Code, Briefcase, GraduationCap, Star, BarChart, Mail, Github, Linkedin, Twitter, Download } from 'lucide-react';
+import { Code, Briefcase, GraduationCap, Star, BarChart, Mail, Github, Linkedin, Twitter, Download, Users, BrainCircuit } from 'lucide-react';
 
 export const personalData = {
   name: 'Baby Sri Durga Kadali',
@@ -8,11 +8,13 @@ export const personalData = {
 };
 
 export const navLinks = [
-  { id: 'about', label: 'About Me' },
-  { id: 'projects', label: 'Projects' },
+  { id: 'about', label: 'About' },
   { id: 'education', label: 'Education' },
   { id: 'skills', label: 'Skills' },
+  { id: 'projects', label: 'Projects' },
+  { id: 'experience', label: 'Internships' },
   { id: 'certifications', label: 'Certifications' },
+  { id: 'soft-skills', label: 'Soft Skills' },
   { id: 'contact', label: 'Contact' },
 ];
 
@@ -76,6 +78,12 @@ export const skills = [
   { name: 'Firebase', level: 85 },
   { name: 'npm', level: 80 },
   { name: 'MySQL', level: 75 },
+];
+
+export const softSkills = [
+  { name: 'Team work' },
+  { name: 'Adaptability' },
+  { name: 'Self learning' },
 ];
 
 export const certifications = [
