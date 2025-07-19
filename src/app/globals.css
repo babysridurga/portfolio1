@@ -114,3 +114,61 @@
 .name-hover-effect:hover span:nth-child(3) {
   transform: translateY(-50%) scaleY(1);
 }
+
+.holographic-card {
+  width: 300px;
+  height: 200px;
+  background: hsl(var(--card));
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 1.5rem;
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px;
+  transition: all 0.3s ease;
+  border: 1px solid hsl(var(--border));
+}
+
+.holographic-card-content h3 {
+  color: hsl(var(--primary));
+  font-size: 1.1rem;
+  font-weight: bold;
+  position: relative;
+  z-index: 2;
+  margin-bottom: 0.5rem;
+}
+
+.holographic-card-content p {
+  color: hsl(var(--muted-foreground));
+  font-size: 0.9rem;
+  position: relative;
+  z-index: 2;
+}
+
+.holographic-card::before {
+  content: '';
+  position: absolute;
+  top: var(--y, 50%);
+  left: var(--x, 50%);
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle at center, hsla(var(--primary) / 0.5), transparent 40%);
+  transform: translate(-50%, -50%) scale(0);
+  transition: transform 0.5s ease;
+  z-index: 1;
+  opacity: 0;
+}
+
+.holographic-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px hsla(var(--primary) / 0.3);
+  border-color: hsla(var(--primary) / 0.5);
+}
+
+.holographic-card:hover::before {
+  transform: translate(-50%, -50%) scale(1);
+  opacity: 1;
+}
