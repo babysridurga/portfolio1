@@ -228,3 +228,59 @@
 .water-fill-effect:hover::before {
   height: 100%;
 }
+
+/* Certification Card Effects */
+.cert-card-base {
+  border-width: 2px;
+  border-style: solid;
+  transition: all 0.3s ease;
+}
+
+.cert-effect-1 {
+  border-color: hsl(var(--primary));
+  cursor: pointer;
+}
+.cert-effect-1:hover {
+  transform: scale(1.05) rotate(2deg);
+  box-shadow: 0 0 15px hsla(var(--primary) / 0.5);
+}
+
+.cert-effect-2 {
+  border-color: hsl(var(--accent));
+  cursor: help;
+}
+.cert-effect-2:hover {
+  transform: scale(1.05) translateY(-5px);
+  box-shadow: 0 5px 15px hsla(var(--accent) / 0.5);
+}
+
+.cert-effect-3 {
+  border-color: #ff4081; /* Example color */
+  cursor: wait;
+}
+.cert-effect-3:hover {
+  animation: pulse 1.5s infinite;
+}
+.dark .cert-effect-3 {
+  border-color: #f55a90;
+}
+
+
+.cert-effect-4 {
+  border-color: #4caf50; /* Example color */
+  cursor: crosshair;
+}
+.cert-effect-4:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 0 5px #4caf5030;
+}
+.dark .cert-effect-4 {
+  border-color: #66bb6a;
+}
+
+
+@keyframes pulse {
+  0% { transform: scale(1); box-shadow: 0 0 10px hsla(var(--primary) / 0.2); }
+  50% { transform: scale(1.05); box-shadow: 0 0 20px hsla(var(--primary) / 0.4); }
+  100% { transform: scale(1); box-shadow: 0 0 10px hsla(var(--primary) / 0.2); }
+}

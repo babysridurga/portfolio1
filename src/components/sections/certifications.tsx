@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import { certifications } from '@/lib/data';
 import { Card, CardContent } from '@/components/ui/card';
 import { AnimatedSection } from '../animated-section';
+import { cn } from '@/lib/utils';
 
 export default function Certifications() {
   const itemVariants = {
@@ -19,6 +20,13 @@ export default function Certifications() {
     })
   };
 
+  const effectClasses = [
+    'cert-effect-1',
+    'cert-effect-2',
+    'cert-effect-3',
+    'cert-effect-4',
+  ];
+
   return (
     <AnimatedSection id="certifications">
       <h2 className="text-3xl font-bold text-center mb-12 font-headline">Certifications</h2>
@@ -31,9 +39,13 @@ export default function Certifications() {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
+            className="h-full"
           >
             <a href={cert.url} target="_blank" rel="noopener noreferrer" className="h-full block">
-              <Card className="h-full flex flex-col items-center justify-center text-center p-4 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+              <Card className={cn(
+                "h-full flex flex-col items-center justify-center text-center p-4 cert-card-base",
+                effectClasses[index % effectClasses.length]
+              )}>
                 <CardContent className="p-0">
                   <p className="font-semibold text-sm">{cert.name}</p>
                   <p className="text-xs text-muted-foreground">{cert.provider}</p>
