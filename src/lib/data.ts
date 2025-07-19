@@ -82,7 +82,7 @@ export const certifications = [
   {
     name: 'AI-ML Virtual Internship',
     provider: 'Google for Developers & AICTE',
-    url: 'https://www.linkedin.com/posts/babysridurgakadali-dev_ai-ml-virtual-internship-activity-7204326806143815681-AySY',
+    url: 'https://www.linkedin.com/posts/babysridurgakadali-dev_ai-ml-virtual-internship-activity-7204326806143815681-AySY?utm_source=social_share_send&utm_medium=android_app&rcm=ACoAAEP5KmQB0fTbmsSsio3hhdihD6TGRxp8KnQ&utm_campaign=share_via',
   },
   {
     name: 'Data Science with Python Bootcamp',

@@ -1,0 +1,1 @@
+This is a placeholder file to create the public directory. You can upload your images and other static assets here.
