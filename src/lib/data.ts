@@ -99,7 +99,7 @@ export const certifications = [
 
 export const socialLinks = {
   github: 'https://github.com/babysridurga',
-  linkedin: 'https://www.linkedin.com/in/baby-sri-durga-kadali-90b793262/',
+  linkedin: 'https://www.linkedin.com/in/babysridurgakadali-dev',
   twitter: 'https://twitter.com',
   email: 'mailto:babysridurgakadali@gmail.com',
 };
