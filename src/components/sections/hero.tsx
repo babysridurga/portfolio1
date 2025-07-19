@@ -1,22 +1,12 @@
 "use client";
 
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import Image from 'next/image';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion } from 'framer-motion';
 import { personalData } from '@/lib/data';
-
 import { AnimatedSection } from '../animated-section';
 
 export default function Hero() {
-  const [index, setIndex] = useState(0);
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setIndex((prevIndex) => (prevIndex + 1) % personalData.bio.length);
-    }, 3000); // Change title every 3 seconds
-    return () => clearInterval(interval);
-  }, []);
-
   return (
     <AnimatedSection id="about" className="pt-32 md:pt-40">
       <div className="grid md:grid-cols-3 gap-12 items-center">
@@ -45,19 +35,15 @@ export default function Hero() {
           >
             {personalData.name}
           </motion.h1>
-          <div className="text-lg text-muted-foreground mb-4 h-8 overflow-hidden">
-            <AnimatePresence mode="wait">
-              <motion.p
-                key={index}
-                initial={{ y: 20, opacity: 0 }}
-                animate={{ y: 0, opacity: 1 }}
-                exit={{ y: -20, opacity: 0 }}
-                transition={{ duration: 0.5, ease: 'circInOut' }}
-                className="whitespace-nowrap"
-              >
-                {personalData.bio[index]}
-              </motion.p>
-            </AnimatePresence>
+          <div className="text-lg text-muted-foreground mb-4 h-16 flex items-center justify-center md:justify-start">
+            <div className="hover-text-container">
+              <span className="hover-text-visible">{personalData.animatedBio.visible}</span>
+              <div className="hover-text-hidden">
+                <span className="top">{personalData.animatedBio.hidden.top}</span>
+                <span className="center">{personalData.animatedBio.hidden.center}</span>
+                <span className="bottom">{personalData.animatedBio.hidden.bottom}</span>
+              </div>
+            </div>
           </div>
         </div>
       </div>

@@ -59,3 +59,77 @@
     scroll-behavior: smooth;
   }
 }
+
+@layer components {
+  .hover-text-container {
+    position: relative;
+    font-size: 1.5rem;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .hover-text-visible {
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .hover-text-container:hover .hover-text-visible {
+    opacity: 0;
+  }
+  
+  .hover-text-hidden {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .hover-text-container:hover .hover-text-hidden {
+    opacity: 1;
+  }
+
+  .hover-text-hidden span {
+    display: block;
+    width: 100%;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+    transform-origin: center;
+  }
+
+  .hover-text-hidden .top {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 50%, 0% 50%);
+  }
+  
+  .hover-text-hidden .bottom {
+    clip-path: polygon(0% 50%, 100% 50%, 100% 100%, 0% 100%);
+  }
+  
+  .hover-text-hidden .center {
+    transform: scaleY(0);
+    opacity: 0;
+  }
+  
+  .hover-text-container:hover .hover-text-hidden .top {
+    transform: translateY(-50%);
+  }
+  
+  .hover-text-container:hover .hover-text-hidden .bottom {
+    transform: translateY(50%);
+  }
+  
+  .hover-text-container:hover .hover-text-hidden .center {
+    transform: scaleY(1);
+    opacity: 1;
+    transition-delay: 0.1s;
+  }
+}
