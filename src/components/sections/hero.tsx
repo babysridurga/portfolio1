@@ -37,14 +37,12 @@ export default function Hero() {
         </motion.div>
 
         <div className="md:col-span-2 text-center md:text-left">
-          <motion.h1
-            initial={{ y: 20, opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
-            transition={{ duration: 0.5, delay: 0.4 }}
-            className="text-4xl md:text-6xl font-bold font-headline mb-4"
-          >
-            {personalData.name}
-          </motion.h1>
+          <div className="name-hover-effect mb-4">
+            <span className="top-name">{personalData.name}</span>
+            <span className="middle-text">{personalData.bio[0]}</span>
+            <span className="bottom-name">{personalData.name}</span>
+          </div>
+
           <div className="text-lg text-muted-foreground mb-4 h-8 overflow-hidden">
             <AnimatePresence mode="wait">
               <motion.div

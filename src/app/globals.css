@@ -59,3 +59,41 @@
     scroll-behavior: smooth;
   }
 }
+
+@layer components {
+  .name-hover-effect {
+    @apply relative cursor-pointer text-4xl md:text-6xl font-bold font-headline;
+    transition: all 0.3s ease;
+  }
+
+  .name-hover-effect .top-name,
+  .name-hover-effect .bottom-name {
+    @apply transition-all duration-300 ease-in-out;
+  }
+  
+  .name-hover-effect .top-name {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 50%, 0% 50%);
+  }
+
+  .name-hover-effect .bottom-name {
+    clip-path: polygon(0% 50%, 100% 50%, 100% 100%, 0% 100%);
+    @apply absolute inset-0;
+  }
+  
+  .name-hover-effect .middle-text {
+    @apply absolute inset-0 flex items-center justify-center text-lg md:text-2xl font-medium text-primary opacity-0 scale-y-0 transition-all duration-300 ease-in-out;
+    transform-origin: center;
+  }
+
+  .name-hover-effect:hover .top-name {
+    transform: translateY(-0.5em);
+  }
+
+  .name-hover-effect:hover .bottom-name {
+    transform: translateY(0.5em);
+  }
+
+  .name-hover-effect:hover .middle-text {
+    @apply opacity-100 scale-y-100;
+  }
+}
