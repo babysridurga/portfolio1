@@ -49,10 +49,10 @@ export default function Hero() {
             <AnimatePresence mode="wait">
               <motion.p
                 key={index}
-                initial={{ x: "100%", opacity: 0 }}
-                animate={{ x: 0, opacity: 1 }}
-                exit={{ x: "-100%", opacity: 0 }}
-                transition={{ duration: 0.5, ease: 'easeInOut' }}
+                initial={{ y: 20, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                exit={{ y: -20, opacity: 0 }}
+                transition={{ duration: 0.5, ease: 'circInOut' }}
                 className="whitespace-nowrap"
               >
                 {personalData.bio[index]}
