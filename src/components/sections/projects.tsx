@@ -1,6 +1,5 @@
 "use client";
 
-import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { projects } from '@/lib/data';
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
@@ -38,9 +37,6 @@ export default function Projects() {
           >
             <Card className="h-full flex flex-col overflow-hidden transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
               <CardHeader>
-                <div className="aspect-video relative mb-4 rounded-lg overflow-hidden">
-                  <Image src={project.image} alt={project.name} layout="fill" objectFit="cover" data-ai-hint={project.dataAiHint} />
-                </div>
                 <CardTitle>{project.name}</CardTitle>
               </CardHeader>
               <CardContent className="flex-grow">
