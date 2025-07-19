@@ -2,7 +2,7 @@ import { Code, Briefcase, GraduationCap, Star, BarChart, Mail, Github, Linkedin,
 
 export const personalData = {
   name: 'Baby Sri Durga Kadali',
-  profilePicture: 'https://storage.googleapis.com/gen-studio-dev-prod-project-assets/53702581-2291-4d7c-8515-3851d75f280a.jpeg',
+  profilePicture: '/profile.jpeg',
   bio: 'Aspiring Software Engineer',
   resumeUrl: '/resume.pdf',
 };
