@@ -6,6 +6,10 @@ import { Briefcase } from 'lucide-react';
 import { AnimatedSection } from '../animated-section';
 
 export default function Experience() {
+  if (internships.length === 0) {
+    return null;
+  }
+  
   const containerVariants = {
     hidden: {},
     visible: {

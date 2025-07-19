@@ -10,14 +10,14 @@ export default function Education() {
   return (
     <AnimatedSection id="education">
       <h2 className="text-3xl font-bold text-center mb-12 font-headline">Education</h2>
-      <div className="max-w-2xl mx-auto">
+      <div className="max-w-2xl mx-auto space-y-6">
         {education.map((edu, index) => (
            <motion.div
             key={index}
             initial={{ opacity: 0, scale: 0.9 }}
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.5 }}
+            transition={{ duration: 0.5, delay: index * 0.1 }}
           >
             <Card className="overflow-hidden transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
               <CardHeader className="flex flex-row items-center gap-4 bg-primary/5">
@@ -35,7 +35,7 @@ export default function Education() {
                   <p className="font-semibold">{edu.duration}</p>
                 </div>
                 <div>
-                  <p className="text-sm text-muted-foreground">CGPA</p>
+                  <p className="text-sm text-muted-foreground">Percentage/CGPA</p>
                   <p className="font-semibold">{edu.cgpa}</p>
                 </div>
               </CardContent>

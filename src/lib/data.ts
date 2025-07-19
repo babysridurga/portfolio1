@@ -1,16 +1,15 @@
 import { Code, Briefcase, GraduationCap, Star, BarChart, Mail, Github, Linkedin, Twitter, Download } from 'lucide-react';
 
 export const personalData = {
-  name: 'Alex Doe',
+  name: 'Baby Sri Durga Kadali',
   profilePicture: 'https://placehold.co/150x150.png',
-  bio: 'A passionate and creative Computer Science student with a knack for building beautiful and functional web applications. I am eager to learn new technologies and apply my skills to solve real-world problems.',
+  bio: 'A dedicated and proactive individual with a strong passion for software development. Eager to apply my skills to contribute to meaningful projects, solve real-world problems, and continuously learn and grow in a challenging environment.',
   resumeUrl: '/resume.pdf',
 };
 
 export const navLinks = [
   { id: 'about', label: 'About Me' },
   { id: 'projects', label: 'Projects' },
-  { id: 'experience', label: 'Experience' },
   { id: 'education', label: 'Education' },
   { id: 'skills', label: 'Skills' },
   { id: 'certifications', label: 'Certifications' },
@@ -19,94 +18,104 @@ export const navLinks = [
 
 export const projects = [
   {
-    name: 'E-commerce Platform',
-    description: 'A full-stack e-commerce website with features like product catalog, shopping cart, and user authentication.',
-    techStack: ['React', 'Node.js', 'Express', 'MongoDB'],
-    githubLink: 'https://github.com',
-    demoLink: 'https://example.com',
-    image: 'https://placehold.co/600x400.png',
-    dataAiHint: 'e-commerce website',
-  },
-  {
-    name: 'Task Management App',
-    description: 'A web app to help users organize tasks, set priorities, and track progress with a clean and intuitive UI.',
-    techStack: ['Vue.js', 'Firebase', 'Tailwind CSS'],
-    githubLink: 'https://github.com',
-    demoLink: 'https://example.com',
-    image: 'https://placehold.co/600x400.png',
-    dataAiHint: 'task app',
-  },
-  {
     name: 'Portfolio Website',
-    description: 'A personal portfolio to showcase my projects and skills, built with Next.js and Framer Motion.',
-    techStack: ['Next.js', 'Tailwind CSS', 'Framer Motion'],
-    githubLink: 'https://github.com',
+    description: 'Developed a responsive personal portfolio website showcasing dynamic navigation, interactive elements, and a sleek user interface.',
+    techStack: ['React.js', 'CSS3', 'HTML5', 'Visual Studio Code', 'GitHub'],
+    githubLink: 'https://github.com/babysridurga/portfolio-website',
     demoLink: 'https://example.com',
     image: 'https://placehold.co/600x400.png',
-    dataAiHint: 'portfolio design',
+    dataAiHint: 'portfolio website',
+  },
+  {
+    name: 'Weather Application',
+    description: 'Built a real-time weather application displaying temperature, humidity, and forecasts using OpenWeather API.',
+    techStack: ['React.js', 'OpenWeather API', 'JavaScript', 'CSS3', 'Visual Studio Code'],
+    githubLink: 'https://github.com/babysridurga/weather-app',
+    demoLink: 'https://example.com',
+    image: 'https://placehold.co/600x400.png',
+    dataAiHint: 'weather app',
+  },
+  {
+    name: 'Image Processing and Skin Lesion Detection',
+    description: 'Developed an image processing project for detecting and classifying skin lesions, using advanced algorithms for early diagnosis.',
+    techStack: ['Python', 'OpenCV', 'TensorFlow', 'Keras', 'Jupyter Notebook', 'GitHub'],
+    githubLink: 'https://github.com/babysridurga/skin-lesion-detection',
+    demoLink: 'https://example.com',
+    image: 'https://placehold.co/600x400.png',
+    dataAiHint: 'skin lesion detection',
   },
 ];
 
-export const internships = [
-  {
-    company: 'Tech Solutions Inc.',
-    role: 'Software Engineer Intern',
-    duration: 'Jun 2023 - Aug 2023',
-    description: 'Developed and maintained web applications using React and Node.js. Collaborated with a team of developers to implement new features and fix bugs.',
-  },
-  {
-    company: 'Innovate Co.',
-    role: 'Frontend Developer Intern',
-    duration: 'Jan 2023 - May 2023',
-    description: 'Worked on redesigning the company\'s main website, improving user experience and performance. Used Figma for design mockups and Vue.js for implementation.',
-  },
-];
+export const internships = [];
 
 export const education = [
   {
-    institution: 'State University',
-    degree: 'Bachelor of Science in Computer Science',
-    cgpa: '3.8/4.0',
-    duration: '2020 - 2024',
+    institution: 'Vishnu Institute of Technology',
+    degree: 'Bachelor of Technology in Information Technology',
+    cgpa: '85%',
+    duration: '2022 - 2026',
+  },
+  {
+    institution: 'Deepthi Junior College',
+    degree: 'Intermediate (12th)',
+    cgpa: '92.9%',
+    duration: '2022',
+  },
+    {
+    institution: 'Deepthi High School',
+    degree: 'SSC (10th)',
+    cgpa: '96.5%',
+    duration: '2020',
   },
 ];
 
 export const skills = [
+  { name: 'Java', level: 90 },
+  { name: 'Python', level: 85 },
+  { name: 'SQL', level: 80 },
+  { name: 'HTML5', level: 95 },
+  { name: 'CSS3', level: 95 },
   { name: 'JavaScript', level: 90 },
-  { name: 'React', level: 85 },
-  { name: 'Node.js', level: 80 },
-  { name: 'Tailwind CSS', level: 95 },
-  { name: 'Python', level: 75 },
-  { name: 'SQL', level: 70 },
-  { name: 'Figma', level: 80 },
+  { name: 'React.js', level: 85 },
+  { name: 'Bootstrap', level: 80 },
+  { name: 'Visual Studio Code', level: 90 },
+  { name: 'Firebase', level: 85 },
+  { name: 'npm', level: 80 },
+  { name: 'MySQL', level: 75 },
 ];
 
 export const certifications = [
   {
-    name: 'Certified JavaScript Developer',
-    provider: 'Tech Certification Body',
+    name: 'AI-ML Virtual Internship',
+    provider: 'Google for Developers & AICTE',
     logo: 'https://placehold.co/100x100.png',
     dataAiHint: 'certificate logo',
   },
   {
-    name: 'React Nanodegree',
-    provider: 'Online Course Platform',
+    name: 'Data Science with Python Bootcamp',
+    provider: 'LetsUpgrade',
     logo: 'https://placehold.co/100x100.png',
     dataAiHint: 'certificate logo',
   },
   {
-    name: 'Cloud Practitioner',
-    provider: 'Major Cloud Provider',
+    name: 'Decision Tree Using Python',
+    provider: 'Infosys Springboard',
+    logo: 'https://placehold.co/100x100.png',
+    dataAiHint: 'certificate logo',
+  },
+  {
+    name: 'Responsive Web Design',
+    provider: 'FreeCodeCamp',
     logo: 'https://placehold.co/100x100.png',
     dataAiHint: 'certificate logo',
   },
 ];
 
 export const socialLinks = {
-  github: 'https://github.com',
-  linkedin: 'https://linkedin.com',
+  github: 'https://github.com/babysridurga',
+  linkedin: 'https://linkedin.com/in/your-profile',
   twitter: 'https://twitter.com',
-  email: 'mailto:alex.doe@example.com',
+  email: 'mailto:babysridurgakadali@gmail.com',
 };
 
 export const sectionIcons = {
