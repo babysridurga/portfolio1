@@ -201,3 +201,30 @@
 .project-title-effect:hover::before {
   transform: scaleX(1);
 }
+
+.water-fill-effect {
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.water-fill-effect .card-content-wrapper {
+  position: relative;
+  z-index: 2;
+}
+
+.water-fill-effect::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  background-color: hsla(var(--primary) / 0.2);
+  transition: height 0.4s ease-in-out;
+  z-index: 1;
+}
+
+.water-fill-effect:hover::before {
+  height: 100%;
+}

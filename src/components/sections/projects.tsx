@@ -35,32 +35,34 @@ export default function Projects() {
             whileInView="animate"
             viewport={{ once: true }}
           >
-            <Card className="h-full flex flex-col overflow-hidden transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
-              <CardHeader>
-                <div className="project-title-effect">
-                  <CardTitle>{project.name}</CardTitle>
-                </div>
-              </CardHeader>
-              <CardContent className="flex-grow">
-                <p className="text-muted-foreground mb-4">{project.description}</p>
-                <div className="flex flex-wrap gap-2">
-                  {project.techStack.map(tech => (
-                    <Badge key={tech} variant="secondary">{tech}</Badge>
-                  ))}
-                </div>
-              </CardContent>
-              <CardFooter className="flex justify-end gap-2">
-                <Button variant="outline" asChild size="sm">
-                  <a href={project.githubLink} target="_blank" rel="noopener noreferrer">
-                    <Github className="mr-2 h-4 w-4" /> GitHub
-                  </a>
-                </Button>
-                <Button asChild size="sm">
-                  <a href={project.demoLink} target="_blank" rel="noopener noreferrer">
-                    <ExternalLink className="mr-2 h-4 w-4" /> Demo
-                  </a>
-                </Button>
-              </CardFooter>
+            <Card className="h-full flex flex-col overflow-hidden transition-all duration-300 hover:shadow-xl hover:-translate-y-1 water-fill-effect">
+              <div className="card-content-wrapper flex flex-col flex-grow">
+                <CardHeader>
+                  <div className="project-title-effect">
+                    <CardTitle>{project.name}</CardTitle>
+                  </div>
+                </CardHeader>
+                <CardContent className="flex-grow">
+                  <p className="text-muted-foreground mb-4">{project.description}</p>
+                  <div className="flex flex-wrap gap-2">
+                    {project.techStack.map(tech => (
+                      <Badge key={tech} variant="secondary">{tech}</Badge>
+                    ))}
+                  </div>
+                </CardContent>
+                <CardFooter className="flex justify-end gap-2">
+                  <Button variant="outline" asChild size="sm">
+                    <a href={project.githubLink} target="_blank" rel="noopener noreferrer">
+                      <Github className="mr-2 h-4 w-4" /> GitHub
+                    </a>
+                  </Button>
+                  <Button asChild size="sm">
+                    <a href={project.demoLink} target="_blank" rel="noopener noreferrer">
+                      <ExternalLink className="mr-2 h-4 w-4" /> Demo
+                    </a>
+                  </Button>
+                </CardFooter>
+              </div>
             </Card>
           </motion.div>
         ))}
