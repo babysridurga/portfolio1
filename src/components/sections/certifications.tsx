@@ -1,6 +1,5 @@
 "use client";
 
-import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { certifications } from '@/lib/data';
 import { Card, CardContent } from '@/components/ui/card';
@@ -34,14 +33,6 @@ export default function Certifications() {
             viewport={{ once: true }}
           >
             <Card className="h-full flex flex-col items-center justify-center text-center p-4 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
-              <Image
-                src={cert.logo}
-                alt={`${cert.name} logo`}
-                width={64}
-                height={64}
-                className="mb-4 rounded-md"
-                data-ai-hint={cert.dataAiHint}
-              />
               <CardContent className="p-0">
                 <p className="font-semibold text-sm">{cert.name}</p>
                 <p className="text-xs text-muted-foreground">{cert.provider}</p>

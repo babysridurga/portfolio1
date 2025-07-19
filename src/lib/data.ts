@@ -23,8 +23,6 @@ export const projects = [
     techStack: ['React.js', 'CSS3', 'HTML5', 'Visual Studio Code', 'GitHub'],
     githubLink: 'https://github.com/babysridurga/portfolio-website',
     demoLink: 'https://example.com',
-    image: 'https://placehold.co/600x400.png',
-    dataAiHint: 'portfolio website',
   },
   {
     name: 'Weather Application',
@@ -32,8 +30,6 @@ export const projects = [
     techStack: ['React.js', 'OpenWeather API', 'JavaScript', 'CSS3', 'Visual Studio Code'],
     githubLink: 'https://github.com/babysridurga/weather-app',
     demoLink: 'https://example.com',
-    image: 'https://placehold.co/600x400.png',
-    dataAiHint: 'weather app',
   },
   {
     name: 'Image Processing and Skin Lesion Detection',
@@ -41,8 +37,6 @@ export const projects = [
     techStack: ['Python', 'OpenCV', 'TensorFlow', 'Keras', 'Jupyter Notebook', 'GitHub'],
     githubLink: 'https://github.com/babysridurga/skin-lesion-detection',
     demoLink: 'https://example.com',
-    image: 'https://placehold.co/600x400.png',
-    dataAiHint: 'skin lesion detection',
   },
 ];
 
@@ -88,26 +82,18 @@ export const certifications = [
   {
     name: 'AI-ML Virtual Internship',
     provider: 'Google for Developers & AICTE',
-    logo: 'https://placehold.co/100x100.png',
-    dataAiHint: 'certificate logo',
   },
   {
     name: 'Data Science with Python Bootcamp',
     provider: 'LetsUpgrade',
-    logo: 'https://placehold.co/100x100.png',
-    dataAiHint: 'certificate logo',
   },
   {
     name: 'Decision Tree Using Python',
     provider: 'Infosys Springboard',
-    logo: 'https://placehold.co/100x100.png',
-    dataAiHint: 'certificate logo',
   },
   {
     name: 'Responsive Web Design',
     provider: 'FreeCodeCamp',
-    logo: 'https://placehold.co/100x100.png',
-    dataAiHint: 'certificate logo',
   },
 ];
 
