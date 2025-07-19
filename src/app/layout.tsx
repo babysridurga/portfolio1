@@ -10,9 +10,6 @@ const spaceGrotesk = Space_Grotesk({ subsets: ['latin'], variable: '--font-space
 export const metadata: Metadata = {
   title: 'Portfolio',
   description: 'A personal portfolio website for students.',
-  icons: {
-    icon: '/profile.jpeg',
-  },
 };
 
 export default function RootLayout({
