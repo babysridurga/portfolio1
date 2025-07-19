@@ -74,7 +74,7 @@ export default function Header() {
       <div className="container mx-auto flex h-20 items-center justify-between px-4">
         <motion.div variants={navItemVariants} className="flex items-center gap-2">
           <Code className="w-8 h-8 text-primary" />
-          <span className="text-xl font-bold font-headline">Persona Canvas</span>
+          <span className="text-xl font-bold font-headline">Portfolio</span>
         </motion.div>
 
         <nav className="hidden md:block">
