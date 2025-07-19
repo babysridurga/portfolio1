@@ -37,7 +37,12 @@ export default function Hero() {
         </motion.div>
 
         <div className="md:col-span-2 text-center md:text-left">
-          <h1 className="text-4xl md:text-6xl font-bold font-headline mb-4">{personalData.name}</h1>
+          <h1 className="name-hover-effect font-headline mb-4">
+            {personalData.name}
+            <span>{personalData.name}</span>
+            <span>{personalData.name}</span>
+            <span>love your self</span>
+          </h1>
           <div className="text-lg text-muted-foreground mb-4 h-8 overflow-hidden">
             <AnimatePresence mode="wait">
               <motion.div
