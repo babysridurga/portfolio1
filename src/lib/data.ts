@@ -82,18 +82,22 @@ export const certifications = [
   {
     name: 'AI-ML Virtual Internship',
     provider: 'Google for Developers & AICTE',
+    url: 'https://www.linkedin.com/posts/babysridurgakadali-dev_ai-ml-virtual-internship-activity-7204326806143815681-AySY',
   },
   {
     name: 'Data Science with Python Bootcamp',
     provider: 'LetsUpgrade',
+    url: '#',
   },
   {
     name: 'Decision Tree Using Python',
     provider: 'Infosys Springboard',
+    url: '#',
   },
   {
     name: 'Responsive Web Design',
     provider: 'FreeCodeCamp',
+    url: '#',
   },
 ];
 

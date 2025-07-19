@@ -32,12 +32,14 @@ export default function Certifications() {
             whileInView="visible"
             viewport={{ once: true }}
           >
-            <Card className="h-full flex flex-col items-center justify-center text-center p-4 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
-              <CardContent className="p-0">
-                <p className="font-semibold text-sm">{cert.name}</p>
-                <p className="text-xs text-muted-foreground">{cert.provider}</p>
-              </CardContent>
-            </Card>
+            <a href={cert.url} target="_blank" rel="noopener noreferrer" className="h-full block">
+              <Card className="h-full flex flex-col items-center justify-center text-center p-4 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+                <CardContent className="p-0">
+                  <p className="font-semibold text-sm">{cert.name}</p>
+                  <p className="text-xs text-muted-foreground">{cert.provider}</p>
+                </CardContent>
+              </Card>
+            </a>
           </motion.div>
         ))}
       </div>
