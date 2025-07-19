@@ -105,7 +105,7 @@ export const socialLinks = {
   github: 'https://github.com/babysridurga',
   linkedin: 'https://www.linkedin.com/in/babysridurgakadali-dev',
   twitter: 'https://twitter.com',
-  email: 'mailto:babysridurga@gmail.com',
+  email: 'mailto:babysridurgakadali@gmail.com',
 };
 
 export const sectionIcons = {
