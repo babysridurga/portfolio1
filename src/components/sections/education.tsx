@@ -1,3 +1,5 @@
+"use client";
+
 import { motion } from 'framer-motion';
 import { education } from '@/lib/data';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';

@@ -1,3 +1,5 @@
+"use client";
+
 import { motion } from 'framer-motion';
 import { internships } from '@/lib/data';
 import { Briefcase } from 'lucide-react';

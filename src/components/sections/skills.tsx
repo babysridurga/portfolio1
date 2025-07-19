@@ -1,3 +1,5 @@
+"use client";
+
 import { motion } from 'framer-motion';
 import { skills } from '@/lib/data';
 import { Progress } from '@/components/ui/progress';
