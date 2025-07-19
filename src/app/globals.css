@@ -172,3 +172,32 @@
   transform: translate(-50%, -50%) scale(1);
   opacity: 1;
 }
+
+.project-title-effect {
+  position: relative;
+  display: inline-block;
+}
+
+.project-title-effect::after,
+.project-title-effect::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(to right, hsl(var(--primary)), hsl(var(--accent)));
+  bottom: -5px;
+  left: 0;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.4s ease-out;
+}
+
+.project-title-effect::before {
+  top: -5px;
+  transform-origin: left;
+}
+
+.project-title-effect:hover::after,
+.project-title-effect:hover::before {
+  transform: scaleX(1);
+}

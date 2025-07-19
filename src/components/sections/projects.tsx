@@ -37,7 +37,9 @@ export default function Projects() {
           >
             <Card className="h-full flex flex-col overflow-hidden transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
               <CardHeader>
-                <CardTitle>{project.name}</CardTitle>
+                <div className="project-title-effect">
+                  <CardTitle>{project.name}</CardTitle>
+                </div>
               </CardHeader>
               <CardContent className="flex-grow">
                 <p className="text-muted-foreground mb-4">{project.description}</p>
