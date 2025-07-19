@@ -2,8 +2,8 @@ import { Code, Briefcase, GraduationCap, Star, BarChart, Mail, Github, Linkedin,
 
 export const personalData = {
   name: 'Baby Sri Durga Kadali',
-  profilePicture: 'https://placehold.co/150x150.png',
-  bio: 'A dedicated and proactive individual with a strong passion for software development. Eager to apply my skills to contribute to meaningful projects, solve real-world problems, and continuously learn and grow in a challenging environment.',
+  profilePicture: 'https://avatars.githubusercontent.com/u/127123992?v=4',
+  bio: 'Aspiring Software Engineer',
   resumeUrl: '/resume.pdf',
 };
 
@@ -99,7 +99,7 @@ export const certifications = [
 
 export const socialLinks = {
   github: 'https://github.com/babysridurga',
-  linkedin: 'https://linkedin.com/in/your-profile',
+  linkedin: 'https://www.linkedin.com/in/baby-sri-durga-kadali-90b793262/',
   twitter: 'https://twitter.com',
   email: 'mailto:babysridurgakadali@gmail.com',
 };

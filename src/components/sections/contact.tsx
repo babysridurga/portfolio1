@@ -31,11 +31,13 @@ export default function Contact() {
               <Github className="mr-2 h-4 w-4" /> GitHub
             </a>
           </Button>
-          <Button variant="outline" asChild>
-            <a href={socialLinks.linkedin} target="_blank" rel="noopener noreferrer">
-              <Linkedin className="mr-2 h-4 w-4" /> LinkedIn
-            </a>
-          </Button>
+          {socialLinks.linkedin && (
+            <Button variant="outline" asChild>
+              <a href={socialLinks.linkedin} target="_blank" rel="noopener noreferrer">
+                <Linkedin className="mr-2 h-4 w-4" /> LinkedIn
+              </a>
+            </Button>
+          )}
         </div>
       </div>
     </AnimatedSection>
