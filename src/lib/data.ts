@@ -3,7 +3,11 @@ import { Code, Briefcase, GraduationCap, Star, BarChart, Mail, Github, Linkedin,
 export const personalData = {
   name: 'Baby Sri Durga Kadali',
   profilePicture: '/profile.jpeg',
-  bio: 'Aspiring Software Engineer',
+  bio: [
+    'Aspiring Software Engineer',
+    'AI/ML Enthusiast',
+    'Generative AI Developer in Progress',
+  ],
   resumeUrl: '/resume.pdf',
 };
 

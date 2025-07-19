@@ -1,13 +1,21 @@
 "use client";
 
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
-import { motion } from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
 import { personalData } from '@/lib/data';
 
 import { AnimatedSection } from '../animated-section';
 
 export default function Hero() {
+  const [index, setIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setIndex((prevIndex) => (prevIndex + 1) % personalData.bio.length);
+    }, 3000); // Change title every 3 seconds
+    return () => clearInterval(interval);
+  }, []);
 
   return (
     <AnimatedSection id="about" className="pt-32 md:pt-40">
@@ -37,14 +45,20 @@ export default function Hero() {
           >
             {personalData.name}
           </motion.h1>
-          <motion.p 
-            initial={{ y: 20, opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
-            transition={{ duration: 0.5, delay: 0.5 }}
-            className="text-lg text-muted-foreground mb-4"
-          >
-            {personalData.bio}
-          </motion.p>
+          <div className="text-lg text-muted-foreground mb-4 h-8 overflow-hidden">
+            <AnimatePresence mode="wait">
+              <motion.p
+                key={index}
+                initial={{ x: "100%", opacity: 0 }}
+                animate={{ x: 0, opacity: 1 }}
+                exit={{ x: "-100%", opacity: 0 }}
+                transition={{ duration: 0.5, ease: 'easeInOut' }}
+                className="whitespace-nowrap"
+              >
+                {personalData.bio[index]}
+              </motion.p>
+            </AnimatePresence>
+          </div>
         </div>
       </div>
     </AnimatedSection>
