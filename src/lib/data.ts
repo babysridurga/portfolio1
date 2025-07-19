@@ -92,7 +92,7 @@ export const certifications = [
   {
     name: 'Decision Tree Using Python',
     provider: 'Infosys Springboard',
-    url: '#',
+    url: 'https://www.linkedin.com/posts/babysridurgakadali-dev_decision-tree-using-python-activity-7199656626696380418-h5fb?utm_source=social_share_send&utm_medium=android_app&rcm=ACoAAEP5KmQB0fTbmsSsio3hhdihD6TGRxp8KnQ&utm_campaign=copy_link',
   },
   {
     name: 'Responsive Web Design',
