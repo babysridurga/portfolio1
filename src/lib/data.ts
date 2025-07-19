@@ -87,12 +87,12 @@ export const certifications = [
   {
     name: 'Data Science with Python Bootcamp',
     provider: 'LetsUpgrade',
-    url: '#',
+    url: 'https://www.linkedin.com/posts/babysridurgakadali-dev_letsupgrade-activity-7204832364080893955-yu7s',
   },
   {
     name: 'Decision Tree Using Python',
     provider: 'Infosys Springboard',
-    url: 'https://www.linkedin.com/posts/babysridurgakadali-dev_decision-tree-using-python-activity-7199656626696380418-h5fb?utm_source=social_share_send&utm_medium=android_app&rcm=ACoAAEP5KmQB0fTbmsSsio3hhdihD6TGRxp8KnQ&utm_campaign=copy_link',
+    url: 'https://www.linkedin.com/posts/babysridurgakadali-dev_decision-tree-using-python-activity-7199656626696380418-h5fb',
   },
   {
     name: 'Responsive Web Design',
